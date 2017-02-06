@@ -1,4 +1,3 @@
-# travis-ci config for the pydon project
 language: python
 python:
 - '3.3'
@@ -12,3 +11,12 @@ before_script:
 - flake8 pydon
 - flake8 tests
 script: py.test tests
+deploy:
+  provider: pypi
+  user: dusktreader
+  password:
+    secure: WKro4MBkSMcqkNqXFS1vpgCPhxV6U5tN4ZAiameQQUm8Ur46O2Uk1M1K3ug9wBubM1Nr5gw1BfdjdQ9oSZD1gQd8K0CkwDRUGnzLCd+SLdjKMk+PS/wPs9fml7Ax90hXamSqr01NNso7/Ij2FGiWesMdrLO3kOV+2wS7kS1r6efABToXVxXoFYep38c2gURuXPy5dkrc8sMVJv1phK0tOV7T+YJsBOxj8uDrDkEyZG3iAzws/HJJOOKMuufWnp6+0RMp+LRO6t0R0UQvFUwIqX3UkwcUbsPuTezfjCXjbE/7drNyijHNVsLVR/jUlO/MEKRakELikORUQjCXRM/ltXJqa3KbZvQwxYxJEYRVc04ZDc63z4aGPFW132Y2syOu3kplow8voR9z8BTkFklA4V9tWXe81Ya8zk3v5vQHi2PxaNxnwCBLTwsq2JwfYG5wyC9S4PVL6yFAtwSaPtoCUPqukh1LumZTVeZsE6lCxUehmEoGONpuBUsBCzgJjO7BAioxQg8flK105uKVqgTq8hYog1a/B6+z6tiPes0UWxugLg6JFO6bsyAmQ2vO2ZN98w7EH7CEWlqLeGO4GveBZD7gfqTrc/sjFLHhpBGbSa/q67dVB1i99MDwNM0gffXntGHCQr6b6APUjYjABCOzRWXk4vILQoyhAEjJgbTBdyQ=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: dusktreader/pydon
