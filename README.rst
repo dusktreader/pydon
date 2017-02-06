@@ -69,6 +69,8 @@ The `dump_file` method may be used to dump a pydon serializable data object
 directly to a named file. The method can accept `pprint format arguments
 <https://docs.python.org/3/library/pprint.html>`_ as well:
 
+.. code-block:: python
+
    import pydon
    pydon.dump_file(
        {'a': 1, 'b': '2', 'c': [4, 5, 6]},
