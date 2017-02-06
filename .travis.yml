@@ -1,3 +1,4 @@
+# travis-ci config for the pydon project
 language: python
 python:
 - '2.5'
