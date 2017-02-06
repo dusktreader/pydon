@@ -16,6 +16,7 @@ setup(
     license=project_metadata['license'],
     install_requires=[
         'pprintpp',
+        'py-buzz',
     ],
     extras_require={
         'dev': [
