@@ -24,7 +24,7 @@ means that pydon strings can safely contain data expressed as pytyhon literals.
 Requirements
 ============
 
- - Python 2 or 3
+ - Python 3
 
 Installing
 ==========
