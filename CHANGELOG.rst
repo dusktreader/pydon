@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Unreleased
 ----------
+- Added support for home-relative paths
 
 v0.1.0 - 2017-02-06
 -------------------
