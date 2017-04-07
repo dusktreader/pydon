@@ -1,3 +1,4 @@
+import os
 import ast
 import buzz
 import pprintpp
@@ -14,6 +15,7 @@ def load_string(text):
 
 
 def load_file(filename):
+    filename = os.path.expanduser(filename)
     with open(filename) as text_file:
         return load_string(text_file.read())
 
